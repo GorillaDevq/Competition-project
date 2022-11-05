@@ -1,0 +1,6 @@
+.description {
+  width: 89%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(320px, 780px) 1fr;
+}
