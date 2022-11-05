@@ -29,9 +29,58 @@
             target="_blank"
             >Реальность</a
           >
-          <a href="#" class="navbar__link header__link" target="_blank"
+          <a href="#" class="navbar__link header__link navbar__link_active"
             >Пожаловаться</a
           >
+          <div class="popup">
+            <form class="popup__form">
+              <svg
+                class="popup__close"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#000"
+                  d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+                />
+              </svg>
+              <label class="popup__text popup__text_type_name" for="name"
+                >Представьтесь</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Введите имя"
+                class="popup__input popup__input_type_name"
+              />
+              <label class="popup__text popup__text_type_tel" for="tel"
+                >Ваш телефон
+              </label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                required
+                placeholder="Введите телефон"
+                class="popup__input popup__input_type_tel"
+              />
+              <label class="popup__text popup__text_type_message" for="message"
+                >Ваше сообщение
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                required
+                placeholder="Опишите вашу проблему"
+                class="popup__message"
+              ></textarea>
+              <button type="submit" class="popup__button">Отправить</button>
+            </form>
+          </div>
         </nav>
       </header>
       <main class="content">
@@ -151,6 +200,7 @@
         </div>
         <button class="footer__button footer__button_hidden">Toggle</button>
       </footer>
-    <script language="JavaScript" src="./pages/script.js"></script>
+    </div>
+    <script language="JavaScript" src="./script/index.js"></script>
   </body>
 </html>

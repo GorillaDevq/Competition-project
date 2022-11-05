@@ -3,3 +3,9 @@
   object-fit: cover;
   aspect-ratio: 1/0.835;
 }
+
+@media screen and (max-width: 1024) {
+  .card__image {
+    aspect-ratio: 1/1;
+  }
+}
