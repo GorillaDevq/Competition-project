@@ -8,5 +8,5 @@
   opacity: 0;
   pointer-events: none;
   transition: 0.5s all;
-  z-index: 99;
+  z-index: 999;
 }

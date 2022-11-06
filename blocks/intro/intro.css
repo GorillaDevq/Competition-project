@@ -1,0 +1,23 @@
+.intro {
+  width: 89%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(320px, 780px)  1fr;
+  column-gap: 10px;
+  min-height: 80vh;
+}
+
+@media screen and (max-width: 800px) {
+  .intro{
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 584px) {
+  .intro{
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}

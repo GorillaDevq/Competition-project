@@ -1,206 +1,142 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="Куда поехать, мечты, ожидания, реальность, лес, горы, море"
-    />
-    <meta name="description" content="Путешествия по России" />
-    <meta name="author" content="Il.Kor&Gorilla.dev" />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <title>Куда я поеду</title>
-  </head>
-  <body class="wrapper">
-    <div class="root">
-      <header class="header header_margin_auto">
-        <nav class="navbar header__navbar">
-          <a href="#" class="navbar__link header__link" target="_blank"
-            >Мечты</a
-          >
-          <a href="#" class="navbar__link header__link" target="_blank"
-            >Ожидания</a
-          >
-          <a
-            href="#"
-            class="navbar__link header__link navbar__link_margin_r"
-            target="_blank"
-            >Реальность</a
-          >
-          <a href="#" class="navbar__link header__link navbar__link_active"
-            >Пожаловаться</a
-          >
-          <div class="popup">
-            <form class="popup__form">
-              <svg
-                class="popup__close"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="#000"
-                  d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-                />
-              </svg>
-              <label class="popup__text popup__text_type_name" for="name"
-                >Представьтесь</label
-              >
-              <input
-                type="text"
-                name="name"
-                id="name"
-                required
-                placeholder="Введите имя"
-                class="popup__input popup__input_type_name"
-              />
-              <label class="popup__text popup__text_type_tel" for="tel"
-                >Ваш телефон
-              </label>
-              <input
-                type="tel"
-                name="tel"
-                id="tel"
-                required
-                placeholder="Введите телефон"
-                class="popup__input popup__input_type_tel"
-              />
-              <label class="popup__text popup__text_type_message" for="message"
-                >Ваше сообщение
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                required
-                placeholder="Опишите вашу проблему"
-                class="popup__message"
-              ></textarea>
-              <button type="submit" class="popup__button">Отправить</button>
-            </form>
-          </div>
+<head><!--Голова-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Website about places for traveling.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Куда поехать, мечты, ожидания, реальность, лес, горы, море">
+  <meta name="authors" content="Il.kor&Gorilla.dev">
+  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <title>Куда я поеду</title>
+</head>
+<body><!--Тело-->
+  <div class="wrapper"><!--Обертка-->
+    <div class="root"><!--Страница-->
+      <header class="header header_margin_auto"><!--Шапка-->
+        <nav>
+          <ul class="navbar list">
+            <li><a href="#" class="navbar__link" target="_blank">Мечты</a></li>
+            <li><a href="#" class="navbar__link" target="_blank">Ожидания</a></li>
+            <li><a href="#" class="navbar__link" target="_blank">Реальность</a></li>
+            <li class="margin-left"><a href="#" class="navbar__link active">Пожаловаться</a></li>
+          </ul>
         </nav>
+        <div class="popup"><!--Попап-->
+          <form class="popup__form">
+            <svg class="popup__close" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#000" d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+            </svg>
+            <label class="popup__text popup__text_type_name" for="name">Представьтесь</label>
+            <input type="text" name="name" id="name" required placeholder="Введите имя" class="popup__input popup__input_type_name" />
+            <label class="popup__text popup__text_type_tel" for="tel">Ваш телефон</label>
+            <input type="tel" name="tel" id="tel" required placeholder="Введите телефон" class="popup__input popup__input_type_tel" />
+            <label class="popup__text popup__text_type_message" for="message">Ваше сообщение</label>
+            <textarea name="message" id="message" required placeholder="Опишите вашу проблему" class="popup__message"></textarea>
+            <button type="submit" class="popup__button">Отправить</button>
+          </form>
+        </div>
+        <div class="burger-section">
+          <svg class="burger__image" id="activator" xmlns="http://www.w3.org/2000/svg"><!--Бургер-->
+            <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z" />
+          </svg>
+          <nav class="burger burger_active">
+            <ul class="burger__list">
+              <li class="burger__item"><a href="#" class="burger__link">Мечты</a></li>
+              <li class="burger__item"><a href="#" class="burger__link">Ожидания</a></li>
+              <li class="burger__item"><a href="#" class="burger__link">Реальность</a></li>
+              <li class="burger__item"><a href="#" class="burger__link active">Пожаловаться</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
-      <main class="content">
-        <section class="description">
-          <div class="description__text">
-            <p class="section-subtitle section-subtitle_position_description">
-              Куда я поеду
-            </p>
-            <h1 class="section-title section-title_position_description">
-              Куда я поеду сразу, как можно будет куда-то поехать
-            </h1>
+      <main class="content"><!--Контент-->
+        <section class="intro"><!--Секция intro-->
+          <div class="description">
+            <p class="description__subtitle">Куда я&nbsp;поеду</p>
+            <h1 class="description__title">Куда я&nbsp;поеду сразу, как можно будет куда-то поехать</h1>
           </div>
-          <div class="description__image"></div>
+          <picture class="intro__picture">
+            <source srcset="./images/intro-image-mob.jpg" media="(max-width: 568px)">
+            <img src="./images/intro-image-desktop.jpg" alt="Крыло самолета на фоне облаков" class="intro__image">
+          </picture>
         </section>
-        <section class="cards">
-          <div class="card">
-            <img src="./images/places-forest.jpeg" alt="" class="card__image" />
-            <div class="card__description">
-              <h2 class="card__title">Поеду в лес</h2>
-              <p class="card__paragraph">
-                Лес — экологическая система, биоценоз, в которой главной
-                жизненной формой являются деревья.
-              </p>
-              <p class="card__paragraph">
-                Лес — составная часть природы, понятие «лес» можно рассматривать
-                на разных уровнях. В глобальном масштабе — это часть биосферы, в
-                локальном — это может быть насаждение. Леса занимают около трети
-                площади суши.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./images/places-mountains.jpeg"
-              alt=""
-              class="card__image"
-            />
-            <div class="card__description">
-              <h2 class="card__title">Поеду в горы</h2>
-              <p class="card__paragraph">
-                Горные системы занимают 64 % поверхности Азии, 36 % — Северной
-                Америки, 25 % — Европы, 22 % — Южной Америки, 17 % — Австралии и
-                3 % — Африки. В целом 24 % земной поверхности приходится на
-                горы. 10 % всех людей живёт на территории гор. В горах берёт
-                своё начало большинство рек Земли.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./images/places-black-sea.jpeg"
-              alt=""
-              class="card__image"
-            />
-            <div class="card__description card__description_position_third">
-              <h2 class="card__title">Поеду на Чёрное море</h2>
-              <p class="card__paragraph">
-                Я уплыву туда, где ни разу я не был, туда, где никто раньше не
-                был. Никто и никогда раньше не был, я уплыву. Я позову тебя
-                смотреть на синее небо и пить по капле синее небо, и падать в
-                это синее небо, я позову.
-              </p>
-              <p class="card__paragraph">
-                Уеду я на Чёрное-Чёрное море, на Чёрное-Чёрное море, на
-                Чёрное-Чёрное море уеду я. Уеду я на Чёрное-Чёрное море, на
-                Чёрное-Чёрное море, на Чёрное-Чёрное море.
-              </p>
-              <p class="card__paragraph">Уеду я.</p>
-            </div>
-          </div>
-        </section>
-        <section class="quotes">
-          <p class="section-subtitle">Люди</p>
-          <h2 class="section-title section-title_position_quotes">
-            Что говорят и говорили люди о путешествиях
-          </h2>
-          <ul class="quotes__table">
-            <li class="quotes__cell">
-              <p class="quotes__author">Иван Бунин</p>
-              <blockquote class="quotes__text quotes__text_active">
-                Человека делают счастливым три вещи: любовь, интересная работа и
-                возможность путешествовать.
-              </blockquote>
+        <section aria-label="places"></section><!--Секция places-->
+          <ul class="places list">
+            <li class="place"><!--Место – лес-->
+              <picture class="place__picture">
+                <source srcset="./images/places-forest-mob.jpg" media="(max-width: 568px)">
+                <img src="./images/places-forest-desktop.jpg" alt="Лес" class="place__image">
+              </picture>
+              <div class="place__description">
+                <h2 class="place__title">Поеду в&nbsp;лес</h2>
+                <p class="place__paragraph">Лес&nbsp;&mdash; экологическая система, биоценоз, в&nbsp;которой главной жизненной формой являются деревья.</p>
+                <p class="place__paragraph">Лес&nbsp;&mdash; составная часть природы, понятие &laquo;лес&raquo; можно рассматривать на&nbsp;разных уровнях. В&nbsp;глобальном масштабе&nbsp;&mdash; это часть биосферы, в&nbsp;локальном&nbsp;&mdash; это может быть насаждение. Леса занимают около трети площади суши.</p>
+              </div>
             </li>
-            <li class="quotes__cell">
-              <p class="quotes__author">Альбер Камю</p>
-              <blockquote class="quotes__text">
-                Путешествие как самая великая и серьезная наука помогает нам
-                вновь обрести себя.
-              </blockquote>
+            <li class="place"><!--Место – горы-->
+              <div class="place__description place__description_media_mobile">
+                <h2 class="place__title">Поеду в&nbsp;горы</h2>
+                <p class="place__paragraph">Горные системы занимают 64&nbsp;% поверхности Азии, 36&nbsp;%&nbsp;&mdash; Северной Америки, 25&nbsp;%&nbsp;&mdash; Европы, 22&nbsp;%&nbsp;&mdash; Южной Америки, 17&nbsp;%&nbsp;&mdash; Австралии и&nbsp;3&nbsp;%&nbsp;&mdash; Африки. В&nbsp;целом 24&nbsp;% земной поверхности приходится на&nbsp;горы.&nbsp;10&nbsp;% всех людей живёт на&nbsp;территории гор. В&nbsp;горах берёт своё начало большинство рек Земли.</p>
+              </div>
+              <picture class="place__picture">
+                <source srcset="./images/places-mountains-mob.jpg" media="(max-width: 568px)">
+                <img src="./images/places-mountains-desktop.jpg" alt="Горы" class="place__image">
+              </picture>
             </li>
-            <li class="quotes__cell">
-              <p class="quotes__author">Норвежская пословица</p>
-              <blockquote class="quotes__text">
-                Лишь тот, кто странствует, открывает новые пути.
-              </blockquote>
-            </li>
-            <li class="quotes__cell">
-              <p class="quotes__author">Мария Захарова</p>
-              <blockquote class="quotes__text">
-                В принципе зарубежная поездка – это серьезнейшее,
-                ответственнейшее и очень рискованное предприятие.
-              </blockquote>
+            <li class="place"><!--Место – Чёрное море-->
+              <picture class="place__picture">
+                <source srcset="./images/places-black-sea-mob.jpg" media="(max-width: 568px)">
+                <img src="./images/places-black-sea-desktop.jpg" alt="Чёрное моря" class="place__image">
+              </picture>
+              <div class="place__description">
+                <h2 class="place__title">Поеду на&nbsp;Чёрное море</h2>
+                <p class="place__paragraph">Я&nbsp;уплыву туда, где ни&nbsp;разу я&nbsp;не&nbsp;был, туда, где никто раньше не&nbsp;был. Никто и&nbsp;никогда раньше не&nbsp;был, я&nbsp;уплыву. Я&nbsp;позову тебя смотреть на&nbsp;синее небо и&nbsp;пить по&nbsp;капле синее небо, и&nbsp;падать в&nbsp;это синее небо, я&nbsp;позову.</p>
+                <p class="place__paragraph">Уеду я&nbsp;на&nbsp;Чёрное-Чёрное море, на&nbsp;Чёрное-Чёрное море, на&nbsp;Чёрное-Чёрное море уеду&nbsp;я. Уеду я&nbsp;на&nbsp;Чёрное-Чёрное море, на&nbsp;Чёрное-Чёрное море, на&nbsp;Чёрное-Чёрное море.</p>
+                <p class="place__paragraph">Уеду я.</p>
+              </div>
             </li>
           </ul>
+        <section class="quotes"><!--Секция quotes-->
+          <div class="description">
+            <p class="description__subtitle">Люди</p>
+            <h2 class="description__title">Что говорят и&nbsp;говорили люди о&nbsp;путешествиях</h2>
+          </div>
+          <ul class="quotes__table list">
+            <li class="quotes__cell"><!--Цитата Бунина-->
+              <p class="quotes__author">Иван Бунин</p>
+              <blockquote class="quotes__text quotes__text_active">Человека делают счастливым три вещи: любовь, интересная работа и&nbsp;возможность путешествовать.</blockquote>
+            </li>
+            <li class="quotes__cell"><!--Цитата Камю-->
+              <p class="quotes__author">Альбер Камю</p>
+              <blockquote class="quotes__text">Путешествие как самая великая и&nbsp;серьезная наука помогает нам вновь обрести себя.</blockquote>
+            </li>
+            <li class="quotes__cell"><!--Норвежская пословица-->
+              <p class="quotes__author">Норвежская пословица</p>
+              <blockquote class="quotes__text">Лишь тот, кто странствует, открывает новые пути.</blockquote>
+            </li>
+            <li class="quotes__cell"><!--Цитата Захаровой-->
+              <p class="quotes__author">Мария Захарова</p>
+              <blockquote class="quotes__text">В&nbsp;принципе зарубежная поездка&nbsp;&mdash; это серьезнейшее, ответственнейшее и&nbsp;очень рискованное предприятие.</blockquote>
+            </li>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer"><!--Подвал -->
         <div class="footer__copyright">
           <div class="footer__column-left">
             <h2 class="footer__year">&copy;2022</h2>
           </div>
           <div class="footer__separator"></div>
           <div class="footer__column-right">
-            <p class="footer__authors">Il.Kor <br />Gorilla.dev</p>
+            <p class="footer__authors">Il.Kor<br/>Gorilla.dev</p>
           </div>
         </div>
         <button class="footer__button footer__button_hidden">Toggle</button>
       </footer>
     </div>
-    <script language="JavaScript" src="./script/index.js"></script>
-  </body>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script language="JavaScript" src="./script/index.js"></script>
+</body>
 </html>

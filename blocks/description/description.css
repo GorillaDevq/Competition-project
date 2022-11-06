@@ -1,6 +1,11 @@
 .description {
-  width: 89%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(320px, 780px) 1fr;
+  align-self: center;
+  font-family: 'Circe', Arial, Helvetica;
+  font-style: normal;
+}
+
+@media screen and (max-width: 800px) {
+  .description {
+    justify-self: center;
+  }
 }

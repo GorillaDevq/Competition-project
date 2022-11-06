@@ -1,57 +1,63 @@
-/* Normalize section ==================================================>*/
+/* Подключил шрифты */
+@import url(../vendor/fonts/fonts.css);
+
+/* Подключил normalize */
 @import url(../vendor/normalize.css);
 
-/* root section ==================================================>*/
+/* Подключил стили к странице */
 @import url(../blocks/root/root.css);
 
-/* header section ==================================================>*/
+/* Подключил стили к шапке */
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/_margin/header_margin_auto.css);
+@import url(../blocks/list/list.css);
 @import url(../blocks/navbar/navbar.css);
+@import url(../blocks/margin-left/margin-left.css);
 @import url(../blocks/navbar/__link/navbar__link.css);
-@import url(../blocks/navbar/__link/_margin/navbar__link_margin_r.css);
 
-/* Popup section ==================================================>*/
+/* Подключил стили к попапу */
 @import url(../blocks/popup/popup.css);
-@import url(../blocks/popup/_active/popup_active.css);
 @import url(../blocks/popup/__form/popup__form.css);
 @import url(../blocks/popup/__form/_active/popup__form_active.css);
-@import url(../blocks/popup/__close/popup__close.css);
-@import url(../blocks/popup/__text/popup__text.css);
+@import url(../blocks/popup/_active/popup_active.css);
 @import url(../blocks/popup/__input/popup__input.css);
+@import url(../blocks/popup/__text/popup__text.css);
 @import url(../blocks/popup/__text/_active/popup__text_active.css);
 @import url(../blocks/popup/__message/popup__message.css);
+@import url(../blocks/popup/__close/popup__close.css);
 @import url(../blocks/popup/__button/popup__button.css);
 
-/* Content section ==================================================>*/
+/* Подключил стили к контенту */
 @import url(../blocks/content/content.css);
 
-/* Description section ==================================================>*/
+/* Подключил стили к секции intro */
+@import url(../blocks/intro/intro.css);
 @import url(../blocks/description/description.css);
-@import url(../blocks/description/__text/description__text.css);
-@import url(../blocks/description/__image/description__image.css);
-@import url(../blocks/section-title/section-title.css);
-@import url(../blocks/section-subtitle/section-subtitle.css);
+@import url(../blocks/description//__subtitle/description__subtitle.css);
+@import url(../blocks/description/__title/description__title.css);
+@import url(../blocks/intro/__picture/intro__picture.css);
+@import url(../blocks/intro/__image/intro__image.css);
 
-/* Cards section ==================================================>*/
-@import url(../blocks/cards/cards.css);
-@import url(../blocks/card/card.css);
-@import url(../blocks/card/__description/card__description.css);
-@import url(../blocks/card/__image/card__image.css);
-@import url(../blocks/card/__paragraph/card__paragraph.css);
-@import url(../blocks/card/__title/card__title.css);
-@import url(../blocks/card/__description/_position/card__description_position_third.css);
+/* Подключил стили к секции places */
+@import url(../blocks/places/places.css);
+@import url(../blocks/place/place.css);
+@import url(../blocks/place/__picture/place__picture.css);
+@import url(../blocks/place/__image/place__image.css);
+@import url(../blocks/place/__decription/place__description.css);
+@import url(../blocks/place/__decription/_media/place__description_media_mobile.css);
+@import url(../blocks/place/__title/place__title.css);
+@import url(../blocks/place/__paragraph/place__paragraph.css);
 
-/* Quotes section ==================================================>*/
+
+/* Подключил стили к секции quotes */
 @import url(../blocks/quotes/quotes.css);
 @import url(../blocks/quotes/__table/quotes__table.css);
 @import url(../blocks/quotes/__cell/quotes__cell.css);
 @import url(../blocks/quotes/__cell/_active/quotes__cell_active.css);
 @import url(../blocks/quotes/__author/quotes__author.css);
 @import url(../blocks/quotes/__text/quotes__text.css);
-@import url(../blocks/section-title/_position/section-title_position_quotes.css);
 
-/* Footer section ==================================================>*/
+/* Подключил стили к секции footer */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 @import url(../blocks/footer/__column-right/footer__column-right.css);

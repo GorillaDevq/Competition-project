@@ -1,6 +1,9 @@
 .content {
-  display: flex;
-  flex-direction: column;
   padding: 100px 0;
-  row-gap: 140px;
+}
+
+@media screen and (max-width: 568px) {
+  .content {
+    padding: 50px 0;
+  }
 }
